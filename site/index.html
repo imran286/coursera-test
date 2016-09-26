@@ -1,136 +1,324 @@
-	<!DOCTYPE html>
-<html lang="en-us">
-<head> <meta charset="utf-8">
-	<title>This is the Index page</title>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Assignment-Solution-Module-2</title>
+
+
+<style type="text/css">
+    /********** Base styles **********/
+
+  * {
+    box-sizing: border-box;
+    }
+
+  
+  h1 {
+    font-family:verdana;
+    color: #000000;
+    text-align: center;
     
-    <style>
-    
-    body {background-color:white} 	
+     }
+ 
 
-    h3 {color:red;
-        font-size:20px
-        width:200px;   
-        text-align:center;
-        }    
+  p {
+    padding: 10px;
+    margin: 0;
+    font-style: bold;
 
-    p {color:lightpink;
-      font-size;5px
-      }
+    }
 
-     </style>
+ 
+  .container 
+   {
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+   }
+
+  section 
+    {
+    background-color: #b8beb4;
+    width: 100%;
+    border: 2px solid black;
+    height: 220px;
+    font-family: courier:bold;
+    color: black;
+    position: relative;
+    overflow: auto;
+    }
+
+  #chicken 
+    {
+    border: 1px solid black;
+    text-align: center;
+    width: 30%;
+    margin-left: 70%;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 125%;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 5px;
+    background-color: #efb9b9;
+    }
+
+  #beef 
+   {
+    border: 1px solid black;
+    text-align: center;
+    width: 30%;
+    margin-left: 70%;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 125%;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 5px;
+    background-color: #c83030;
+   }
+
+
+  #sushi 
+    {
+    border: 1px solid black;
+    text-align: center;
+    width: 30%;
+    margin-left: 70%;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 125%;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 5px;
+    background-color: #f5f0c0;
+    }
+
+  .row 
+    {
+    width: 100%;
+    }
+
+
+  /* For Desktop viewing as per breakpoint provided*/
+
+  @media (min-width: 992px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+      float: left;
+    }
+
+    .col-lg-1 {
+      width: 8.33%;
+    }
+    .col-lg-2 {
+      width: 16.66%;
+    }
+    .col-lg-3 {
+      width: 25%;
+    }
+    .col-lg-4 {
+      width: 33.33%;
+    }
+    .col-lg-5 {
+      width: 41.66%;
+    }
+    .col-lg-6 {
+      width: 50%;
+    }
+    .col-lg-7 {
+      width: 58.33%;
+    }
+    .col-lg-8 {
+      width: 66.66%;
+    }
+    .col-lg-9 {
+      width: 74.99%;
+    }
+    .col-lg-10 {
+      width: 83.33%;
+    }
+    .col-lg-11 {
+      width: 91.66%;
+    }
+    .col-lg-12 {
+      width: 100%;
+    }
+
+  }
+
+/* For Tablet viewing as per breakpoint provided*/
+
+ 
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+      float: left;
+    }
+
+    .col-md-1 {
+      width: 8.33%;
+    }
+    .col-md-2 {
+      width: 16.66%;
+    }
+    .col-md-3 {
+      width: 25%;
+    }
+    .col-md-4 {
+      width: 33.33%;
+    }
+    .col-md-5 {
+      width: 41.66%;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-7 {
+      width: 58.33%;
+    }
+    .col-md-8 {
+      width: 66.66%;
+    }
+    .col-md-9 {
+      width: 74.99%;
+    }
+    .col-md-10 {
+      width: 83.33%;
+    }
+    .col-md-11 {
+      width: 91.66%;
+    }
+    .col-md-12 {
+      width: 100%;
+    }
+
+#sushi 
+    {
+    border: 1px solid black;
+    text-align: center;
+    width: 15%;
+    margin-left: 85%;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 125%;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 5px;
+    background-color: #f5f0c0;
+    }
+
+  }
+
+  /* For mobile viewing as per brekpoint provided*/
+
+  @media (max-width: 767px) {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+    }
+
+    .col-sm-1 {
+      width: 8.33%;
+    }
+    .col-sm-2 {
+      width: 16.66%;
+    }
+    .col-sm-3 {
+      width: 25%;
+    }
+    .col-sm-4 {
+      width: 33.33%;
+    }
+    .col-sm-5 {
+      width: 41.66%;
+    }
+    .col-sm-6 {
+      width: 50%;
+    }
+    .col-sm-7 {
+      width: 58.33%;
+    }
+    .col-sm-8 {
+      width: 66.66%;
+    }
+    .col-sm-9 {
+      width: 74.99%;
+    }
+    .col-sm-10 {
+      width: 83.33%;
+    }
+    .col-sm-11 {
+      width: 91.66%;
+    }
+    .col-sm-12 {
+      width: 100%;
+    }
+  }
+
+
+
+
+</style>
+
+
+
 </head>
-<section id="tops"></section>
-
 
 <body>
+  <h1>Our Menu</h1>
 
-<h2 style= color"font-family:verdana"> President Quote</h2>
+  <div class="row">
+    <div class="container col-lg-4 col-md-6 col-sm-12">
 
-<b><p title="President's Quote"></b>
-<img src="Image/imran.JPG" alt="President's Image" height="200" width="210" title="President's Pic with quote">
-<b>It is not the critic who counts;</b> not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better.  <strong> The credit belongs to the man who is actually in the arena, </strong> whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; <i>who at the best knows in the end the triumph of high achievement </i>, and who at the worst, if he fails, <sup>at least fails while daring greatly</sup>, so that his place shall never be with those cold and timid souls whoknow<mark>&nbsp;victory&nbsp;nor&nbsp;defeat&nbsp;.</mark></p>
+    <section>
+      <div id="chicken">Chicken</div>
+      <hr>
+      <p>
+        The chicken (Gallus gallus domesticus) is a type of domesticated fowl, a subspecies of the red junglefowl. It is one of the most common and widespread domestic animals, with a population of more than 19 billion as of 2011.Humans keep chickens primarily as a source of food, consuming both their meat and their eggs. Genetic studies have pointed to multiple maternal origins in Southeast-, East-,and South Asia, but with the clade  
+      </p>
+    
+    </section>
+    
+    </div>
+  
 
-<pre>This is a pre Elements, it will display the way I want...>< &&&&&   </pre>
-<br>
-<abbr title="World Health Organisation">WHO was founded on 1948<abbr>
+    <div class="container col-lg-4 col-md-6 col-sm-12">
+      
+      <section>
 
+      <div id="beef">Beef</div>
+      <hr>
+        <p>
+          Beef is the culinary name for meat from cattle. Beef can be harvested from bulls, heifers or steers. Its acceptability as a food source varies in different parts of the world. Beef muscle meat can be cut into roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.) Some cuts are processed (corned beef or beef jerky), and trimmings, usually mixed with meat from older, leaner cattle, are ground, minced or used in sausages. 
+        </p>  
+      </section>
 
-<!-- This is quote from World Wild Life -->
-<blockquote cite="http://www.worldwildlife.org/who/index.html">For 50 years, WWF has been protecting the future of nature.
-The world's leading conservation organization,
-WWF works in 100 countries and is supported by
-1.2 million members in the United States and <br>
-<bdo dir="rtl"> close to 5 million globally<bdo>
-</blockquote>
+  </div>
+  
+    <div class="container col-lg-4 col-md-12 col-sm-12">
+      <section>
+        <div id="sushi">Sushi</div>
+        <hr>
+        <p>
+           Sushi is a type of food preparation originating in Japan, consisting of cooked vinegared rice combined with other ingredients such as raw seafood, vegetables and sometimes tropical fruits. Ingredients and forms of sushi presentation vary widely, but the ingredient which all sushi have in common is rice (also referred to as shari or sumeshi. 
+        </p>
+      </section>
+  </div>
 
-<br>
-
-<del> &lt;  &gt; &amp;</del>
-
-<h1 style="Text-align:center;">Presidents of America</h1>
-<hr>
-
-<ul>
-	<li>Bush Senior</li>
-    <li>Clinton</li>
-    <li>Bush Jr</li>
-    <li>Obama
-      <ul> <li>Michelle</li>
-    	   <li>D1</li> 
-    	   <li>D2</li> 
-      </ul>
-    </li>
-
-</ul>
-
-
-
-<ol>
-	<li> <a href="#Sect-1">Section-1</a> </li>
-	<li> <a href="#Sect-2">Section-2</a> </li>
-	<li> <a href="#Sect-3">Section-3</a> </li>
-	<li> <a href="#Sect-4">Section-4</a> </li>
-	<li> <a href="#Sect-5">Section-5</a> </li>
-</ol>
-
-
-<section id="Sect-1">
-
-<h3>Section-1</h3>
-It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and 
-</section>
-
-<hr>
-
-<section id="Sect-2">
-
-<h3>Section-2</h3>
-It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and 
-</section>
-
-<hr>
-
-<section id="Sect-3">
-
-<h3">Section-3</h3>
-It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and 
-</section>
-
-<hr>
-
-<section id="Sect-4">
-
-<h3>Section-3</h3>
-It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and 
-</section>
-
-<hr>
-
-<section id="Sect-5">
-
-<h3>Section-5</h3>
-It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and 
-</section>
-
-<hr>
-
-<p> 
-<a href="#Tops">Back to Top of the page</a> <Br>
-
-
-
-<div><a href="four.html" title="Same Directory">Page Four</a> </div>
-<div><a href="https://www.facebook.com" target="_blank" title="External">Facebook</a></div>
-
-</p>
+</div>
 
 </body>
 
-<footer> &copy; Copyrights, &reg; Registered</footer>
-<address>
-         Imran Thakur <br>
-         No-12-Cross-Vivek,<br> 
-         Nagar Post, <br>
-         Blr-560047</address><br>
 
-</html>
+<footer>
+  <p><b>Posted by:</b> Imran Thakur</p>
+  <p><b>Course Name:</b> HTML5, CSS3 and Java Script by Coursera</p>
+  <p><b>Assignment Solution:</b>Module-2</p>
+  <p><b>Location:</b>Bangalore-India</p>
+  <p><b>Contact information:</b> <a href="mailto:imran286@yahoo.com">imran286@yahoo.com</a></p>
+</footer>
+
+ </html>
